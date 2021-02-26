@@ -2,6 +2,11 @@ autoUpdate:
   enabled: false
   schedule: ""
 bootConfigURL: http://192.168.20.143/rueyjxcloud/environment-test-dev
+buildPacks:
+  buildPackLibrary:
+    gitRef: master
+    gitURL: https://hub.fastgit.org/RueyJxCloud/jenkins-x-kubernetes.git
+    name: my
 cluster:
   clusterName: test
   devEnvApprovers:
@@ -13,7 +18,7 @@ cluster:
   gitServer: http://192.168.20.143
   namespace: jx
   provider: kubernetes
-  registry: https://192.168.20.143:5443
+  registry: 192.168.20.143:5443
 environments:
 - ingress:
     domain: 172.18.0.2.nip.io

@@ -4,7 +4,7 @@ adminUser:
 docker:
   email: sdfds@sdf.com
   password: local:test/docker:password
-  url: https://192.168.20.143:5443
+  url: 192.168.20.143:5443
   username: admin
 enableDocker: true
 pipelineUser:

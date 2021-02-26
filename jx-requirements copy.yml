@@ -1,7 +1,12 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://proxy.free.idcfengye.com/rueyjxcloud/environment-test-dev
+bootConfigURL: http://192.168.20.143/rueyjxcloud/environment-test-dev
+buildPacks:
+  buildPackLibrary:
+    gitRef: master
+    gitURL: https://hub.fastgit.org/RueyJxCloud/jenkins-x-kubernetes.git
+    name: my
 cluster:
   clusterName: test
   devEnvApprovers:
@@ -10,13 +15,13 @@ cluster:
   environmentGitOwner: rueyjxcloud
   gitKind: gitlab
   gitName: gitlab
-  gitServer: http://172.18.0.1:7080
+  gitServer: http://192.168.20.143
   namespace: jx
   provider: kubernetes
-  registry: https://172.18.0.1:5443
+  registry: 192.168.20.143:5443
 environments:
 - ingress:
-    domain: ""
+    domain: 172.18.0.2.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -47,7 +52,7 @@ environments:
   repository: environment-test-production
 gitops: true
 ingress:
-  domain: ""
+  domain: 172.18.0.2.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
