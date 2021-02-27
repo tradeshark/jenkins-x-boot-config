@@ -5,7 +5,7 @@ bootConfigURL: https://hub.fastgit.org/jenkins-x/jenkins-x-boot-config.git
 buildPacks:
   buildPackLibrary:
     gitRef: master
-    gitURL: https://hub.fastgit.org/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    gitURL: http://192.168.20.143/ruey-cn/jenkins-x-kubernetes
     name: my
 cluster:
   clusterName: test
