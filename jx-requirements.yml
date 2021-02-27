@@ -1,7 +1,7 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: http://192.168.20.143/rueyjxcloud/environment-test-dev
+bootConfigURL: https://hub.fastgit.org/jenkins-x/jenkins-x-boot-config.git
 buildPacks:
   buildPackLibrary:
     gitRef: master
@@ -18,10 +18,10 @@ cluster:
   gitServer: http://192.168.20.143
   namespace: jx
   provider: kubernetes
-  registry: 192.168.20.143:5443
+  registry: https://192.168.20.143:5443
 environments:
 - ingress:
-    domain: 172.18.0.2.nip.io
+    domain: 172.18.0.3.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -52,7 +52,7 @@ environments:
   repository: environment-test-production
 gitops: true
 ingress:
-  domain: 172.18.0.2.nip.io
+  domain: 172.18.0.3.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -81,5 +81,5 @@ velero:
   ttl: ""
 versionStream:
   ref: v1.0.610
-  url: https://github.com/jenkins-x/jenkins-x-versions.git
+  url: https://hub.fastgit.org/jenkins-x/jenkins-x-versions.git
 webhook: lighthouse
