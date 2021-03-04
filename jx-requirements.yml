@@ -1,7 +1,7 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://hub.fastgit.org/jenkins-x/jenkins-x-boot-config.git
+bootConfigURL: http://ruey/rueyjxcloud/environment-test-dev.git/
 buildPacks:
   buildPackLibrary:
     gitRef: master
