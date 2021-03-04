@@ -5,7 +5,7 @@ bootConfigURL: https://hub.fastgit.org/jenkins-x/jenkins-x-boot-config.git
 buildPacks:
   buildPackLibrary:
     gitRef: master
-    gitURL: http://192.168.20.143/ruey-cn/jenkins-x-kubernetes
+    gitURL: http://ruey/ruey-cn/jenkins-x-kubernetes
     name: my
 cluster:
   clusterName: test
@@ -15,13 +15,13 @@ cluster:
   environmentGitOwner: rueyjxcloud
   gitKind: gitlab
   gitName: gitlab
-  gitServer: http://192.168.20.143
+  gitServer: http://ruey
   namespace: jx
   provider: kubernetes
-  registry: 192.168.20.143:5443
+  registry: http://192.168.20.143:5443
 environments:
 - ingress:
-    domain: 172.18.0.3.nip.io
+    domain: 172.18.0.2.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -52,7 +52,7 @@ environments:
   repository: environment-test-production
 gitops: true
 ingress:
-  domain: 172.18.0.3.nip.io
+  domain: 172.18.0.2.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -81,5 +81,5 @@ velero:
   ttl: ""
 versionStream:
   ref: v1.0.610
-  url: https://hub.fastgit.org/jenkins-x/jenkins-x-versions.git
+  url: http://ruey/ruey-cn/jenkins-x-versions.git
 webhook: lighthouse

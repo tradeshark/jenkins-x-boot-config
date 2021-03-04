@@ -2,7 +2,7 @@ adminUser:
   password: local:test/adminUser:password
   username: admin
 docker:
-  email: admin@local.com
+  email: s@s.com
   password: local:test/docker:password
   url: 192.168.20.143:5443
   username: admin

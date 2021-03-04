@@ -1,4 +1,4 @@
 dependencies:
 - condition: external-dns.enabled
   name: external-dns
-  repository: https://charts.bitnami.com/bitnami
+  repository: http://192.168.20.143:8080/bn
