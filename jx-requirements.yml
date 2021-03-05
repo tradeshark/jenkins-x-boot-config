@@ -1,7 +1,7 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: http://ruey/rueyjxcloud/environment-test-dev.git/
+bootConfigURL: http://ruey/ruey-cn/environment-test-dev.git/
 buildPacks:
   buildPackLibrary:
     gitRef: master
