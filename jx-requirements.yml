@@ -52,7 +52,7 @@ environments:
   repository: environment-test-production
 gitops: true
 ingress:
-  domain: ""
+  domain: 172.18.0.2.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
