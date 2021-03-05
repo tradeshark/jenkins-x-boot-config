@@ -1,11 +1,11 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: http://ruey/ruey-cn/environment-test-dev.git/
+bootConfigURL: http://192.168.22.240/ruey-cn/environment-test-dev.git/
 buildPacks:
   buildPackLibrary:
     gitRef: master
-    gitURL: http://ruey/ruey-cn/jenkins-x-kubernetes
+    gitURL: http://192.168.22.240/ruey-cn/jenkins-x-kubernetes
     name: my
 cluster:
   clusterName: test
@@ -15,7 +15,7 @@ cluster:
   environmentGitOwner: rueyjxcloud
   gitKind: gitlab
   gitName: gitlab
-  gitServer: http://ruey
+  gitServer: http://192.168.22.240
   namespace: jx
   provider: kubernetes
   registry: 192.168.20.143:5443
@@ -81,5 +81,5 @@ velero:
   ttl: ""
 versionStream:
   ref: v1.0.610
-  url: http://ruey/ruey-cn/jenkins-x-versions.git
+  url: http://192.168.22.240/ruey-cn/jenkins-x-versions.git
 webhook: lighthouse
