@@ -1,7 +1,7 @@
 init:
 	helm init --client-only --stable-repo-url=https://mirror.azure.cn/kubernetes/charts/
 	helm repo add jenkins-x http://192.168.20.143:8080/cm
-	helm repo add bitnami https://charts.bitnami.com/bitnami
+	helm repo add bitnami http://192.168.20.143:8080/bn
 	# helm repo add stable https://charts.helm.sh/stable
 
 build: clean init
