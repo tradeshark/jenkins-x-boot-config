@@ -72,8 +72,8 @@ echo "Using jx-requirements.yml"
 cat jx-requirements.yml
 
 # TODO hack until we fix boot to do this too!
-helm init --client-only
-helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+helm init --client-only --stable-repo-url=https://mirror.azure.cn/kubernetes/charts/ 
+helm repo add jenkins-x http://192.168.20.143:8080/jx
 
 jx step bdd \
     --use-revision \
