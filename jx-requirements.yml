@@ -18,7 +18,7 @@ cluster:
   gitServer: http://192.168.22.240
   namespace: jx
   provider: kubernetes
-  registry: https://192.168.20.143:5443
+  registry: 192.168.20.143:5443
 environments:
 - ingress:
     domain: 172.18.0.2.nip.io
