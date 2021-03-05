@@ -18,7 +18,7 @@ cluster:
   gitServer: http://ruey
   namespace: jx
   provider: kubernetes
-  registry: http://192.168.20.143:5443
+  registry: 192.168.20.143:5443
 environments:
 - ingress:
     domain: 172.18.0.2.nip.io
